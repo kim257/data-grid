@@ -1,1 +1,15 @@
-<router-outlet></router-outlet>
+<body style="border: solid">
+<div style="display: flex">
+  <div style="display: flex;flex-direction: column;padding: 10px;">
+    <button [routerLink]="['handsontable']">
+      handsontable
+    </button>
+    <button [routerLink]="['argrid']">
+      argrid
+    </button>
+  </div>
+  <div>
+    <router-outlet></router-outlet>
+  </div>
+</div>
+</body>
