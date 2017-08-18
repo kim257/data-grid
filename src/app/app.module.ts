@@ -1,9 +1,10 @@
 import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
+import {HotTableModule} from 'ng2-handsontable';
 
 import {AppComponent} from './app.component';
 import {routing} from './app.routes';
-import {HandsontableComponent} from "./handsontable/handsontable.module";
+import {HandsontableComponent} from './handsontable/handsontable.component';
 
 @NgModule({
   declarations: [
@@ -12,6 +13,7 @@ import {HandsontableComponent} from "./handsontable/handsontable.module";
   ],
   imports: [
     BrowserModule,
+    HotTableModule,
     routing
   ],
   providers: [],
