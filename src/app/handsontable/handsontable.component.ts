@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, OnInit} from "@angular/core";
 import {getBasicData} from './data';
 
 @Component({
@@ -6,6 +6,7 @@ import {getBasicData} from './data';
   templateUrl: './handsontable.component.html',
   styleUrls: ['./handsontable.component.scss']
 })
+
 export class HandsontableComponent implements OnInit {
 
   data: any[] = getBasicData(10);

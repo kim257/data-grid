@@ -4,9 +4,9 @@ import {HotTableModule} from 'ng2-handsontable';
 
 import {AppComponent} from './app.component';
 import {routing} from './app.routes';
-import {HandsontableComponent} from "./handsontable/handsontable.module";
 import {AgGridModule} from "ag-grid-angular";
 import {ArgridComponent} from "./ar-grid/ar-grid.module";
+import {HandsontableComponent} from "./handsontable/handsontable.component";
 
 @NgModule({
   declarations: [
