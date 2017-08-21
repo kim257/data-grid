@@ -14,6 +14,24 @@ export class ArgridComponent {
     this.gridOptions = <GridOptions>{};
     this.gridOptions.rowData = this.createRowData();
     this.gridOptions.columnDefs = this.createColumnDefs();
+    this.gridOptions.enableFilter = true;
+  }
+
+  public kim(event, name) {
+    console.info(name, '>>>', event)
+  }
+
+  public kimFunction(action) {
+    (action === 'add') ? this.gridOptions.api.updateRowData({
+      add: [{
+        name: "Bob",
+        mood: "Happy",
+        number: 10
+      }]
+    }) : this.gridOptions.api.updateRowData({
+      remove: this.gridOptions.api.getSelectedRows()
+    });
+    console.info('>>>', this.gridOptions.api.getSelectedRows());
   }
 
   private createColumnDefs() {

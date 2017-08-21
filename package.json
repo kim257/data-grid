@@ -21,12 +21,13 @@
     "@angular/platform-browser": "^4.0.0",
     "@angular/platform-browser-dynamic": "^4.0.0",
     "@angular/router": "^4.0.0",
+    "ag-grid": "12.0.x",
+    "ag-grid-angular": "12.0.x",
+    "ag-grid-enterprise": "^12.0.2",
     "core-js": "^2.4.1",
     "ng2-handsontable": "^1.0.3",
     "rxjs": "^5.1.0",
-    "zone.js": "^0.8.4",
-    "ag-grid": "12.0.x",
-    "ag-grid-angular": "12.0.x"
+    "zone.js": "^0.8.4"
   },
   "devDependencies": {
     "@angular/cli": "1.2.0",
